@@ -14,5 +14,5 @@ Select pop.location as location_region,
        DIV0(deaths_per_location,population_per_location)*100 as death_rate
  from 
 {{ref('population')}} pop
-Inner Join {{ref('total_deaths')}} td On (pop.date = td.date)
+Inner Join {{ref('total_deaths')}}   td On (pop.date = td.date)
 group by pop.location
