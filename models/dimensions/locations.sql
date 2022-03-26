@@ -21,4 +21,4 @@ Select Distinct
        area_km_2_,
        location
 from 
-"FIVETRAN_INTERVIEW_DB"."GOOGLE_SHEETS"."COVID_19_INDONESIA_DEEPAK_SAINI"
+{{ source('covid_indonesia_raw', 'COVID_19_INDONESIA_DEEPAK_SAINI') }}

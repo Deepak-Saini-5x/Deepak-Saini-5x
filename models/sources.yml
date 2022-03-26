@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: covid_indonesia_raw
+    database: '{{ var("raw_db") }}'
+    schema: GOOGLE_SHEETS
+    tables:
+      - name: COVID_19_INDONESIA_DEEPAK_SAINI
+
+  - name: covid_indonesia_dev
+    database: '{{ var("dev_db") }}'
+    schema: PLAYGROUND_DEEPAK_SAINI
+    tables:
+      - name: ACTIVE_CASES
+      - name: DEATH_RATE
+      - name: LOCATIONS
+      - name: POPULATION
+      - name: TOTAL_DEATHS

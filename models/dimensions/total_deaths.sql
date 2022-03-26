@@ -13,5 +13,5 @@ Select  Date,
         location,
         Sum(total_deaths) deaths_per_date_per_location
 from 
-"FIVETRAN_INTERVIEW_DB"."GOOGLE_SHEETS"."COVID_19_INDONESIA_DEEPAK_SAINI"
+{{ source('covid_indonesia_raw', 'COVID_19_INDONESIA_DEEPAK_SAINI') }}
 group by date,country,location

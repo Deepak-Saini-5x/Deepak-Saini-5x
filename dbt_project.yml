@@ -25,6 +25,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+vars:
+    raw_db: FIVETRAN_INTERVIEW_DB
+    dev_db: INTERVIEW_DB
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
